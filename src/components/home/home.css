@@ -1,0 +1,128 @@
+.intro{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../../../public/ometepe.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-top: 50px;
+}
+
+.intro--name{
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.intro--hability{
+    color: rgb(255, 238, 145);
+    width: 100%;
+    text-align: center;
+    margin: 0;font-family: cursive;
+    
+
+}
+.intro--btn{
+    width: 90%;
+    margin: 150px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.intro--btn button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #057cff;
+    font-weight: 700;
+    
+}
+.intro--btn button:hover{
+    border-color:  #057cff;
+  
+    color: #fff;
+    background-color: #057cff;
+    border-bottom: 2px solid #fff;
+
+}
+.intro--description{
+    width: 60%;
+    color: #fff;
+}
+
+
+.habilities{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-container {
+    perspective: 1000px;
+    width: 24%;
+  }
+  
+  .card {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+  }
+  
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+  
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .back {
+    background-color: #ddd;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+  }
+  
+  h2, p {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .intro--btn button{
+      padding: 10px 20px;
+      border: none;
+      border-radius: 15px;
+      font-size: 20px;
+      color: #057cff;
+      font-weight: 700;
+      width: 80%;
+      
+  }
+  
+  .intro--description{
+      width: 90%;
+      color: #fff;
+      text-align: justify;
+  }
+  
+  }
+
